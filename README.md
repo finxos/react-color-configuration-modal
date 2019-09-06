@@ -3,7 +3,7 @@
 
 ## installation
 ```shell
-"react-color-configuration-modal": "git+ssh://git@gitlab.finxos.com:tu-editor/react-color-configuration-modal.git#develop",
+npm install -S finxos/react-color-configuration-modal
 ```
 
 ## commands
