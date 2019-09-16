@@ -96,7 +96,14 @@ export default class extends React.Component {
   };
 
   _onClose = (e) => {
-    const { target } = this._event;
+    const { colorCfgOptions } = this.props;
+    const target = this._event
+      ? this._event.target
+      : {
+          value: [],
+          dirty: colorCfgOptions.current,
+          multiple: false
+        };
     this.visibleChange(false);
     target.action = 'dismiss';
     this.change({ target });
